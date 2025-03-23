@@ -24,16 +24,25 @@ This project predicts sales at Aufar Grosir Jeans on Shopee using a multiple lin
 - Data Cleaning (Python) – Handled missing values, removed duplicates, and formatted variables.
 - Exploratory Data Analysis (Python) – Identified key trends and correlations between sales, discounts, and other variables.
 - Assumption Tests (SPSS) – Performed statistical tests to ensure data suitability for regression analysis:
--- Normality Test – Ensured that residuals were normally distributed.
--- Multicollinearity Test – Verified that independent variables were not highly correlated (VIF < 10).
--- Heteroscedasticity Test – Checked for variance consistency in residuals.
--- Autocorrelation Test (Durbin-Watson) – Ensured no correlation in residual errors.
+ 1. Normality Test – Ensured that residuals were normally distributed. 
+    ![image](https://github.com/user-attachments/assets/b2617d64-b3a9-4fd6-95c2-b7e9e6d4f932)
+    the significance value is 0.18> 0.05, it can be concluded that the residual data is normally distributed.
+ 3. Multicollinearity Test – Verified that independent variables were not highly correlated (VIF < 10).
+    ![image](https://github.com/user-attachments/assets/ff20f783-f3f1-4ee6-93ce-fa1556ad9705)
+    The Tolerance value is 0.759 and the VIF value is 1.318, so the conclusion is that there is no multicollinearity. So that the data on products sold and discounted shipping costs are good to use in the regression model. 
+ 5. Heteroscedasticity Test – Checked for variance consistency in residuals.
+    ![image](https://github.com/user-attachments/assets/47775c2c-db8c-484f-9458-20b9e2a028f1)
+    The graph does not indicate heteroscedasticity, as the dots are scattered randomly without any particular pattern. However, this interpretation needs to be supported with additional statistical tests such as the Glejser test to confirm the results.
+    ![image](https://github.com/user-attachments/assets/fe362b3b-0547-45b9-b1dd-d772aa9272ca)
+    Judging from the results of the Glejser test conducted that the significance value of the product sold is 0.156 and the discounted shipping cost (shipping) is 0.167 shows a significance value greater than α, so the conclusion is that there is no heteroscedasticity. 
+
+ 7. Autocorrelation Test (Durbin-Watson) – Ensured no correlation in residual errors.
 - Regression Modeling (SPSS) – Conducted multiple linear regression to analyze the impact of independent variables on total sales.
 - Model Evaluation (SPSS)
--- F-Test – Showed that the independent variables significantly influenced sales (F = 2832.640, p < 0.05).
--- T-Test – Confirmed that each independent variable had a significant impact on total sales (p < 0.05).
--- R² Value – 91.9%, indicating that the model explains most of the variance in sales.
--- MAPE (Mean Absolute Percentage Error) – 8.99%, proving the model’s high accuracy.
+  1. F-Test – Showed that the independent variables significantly influenced sales (F = 2832.640, p < 0.05).
+  2. T-Test – Confirmed that each independent variable had a significant impact on total sales (p < 0.05).
+  3. R² Value – 91.9%, indicating that the model explains most of the variance in sales.
+  4. MAPE (Mean Absolute Percentage Error) – 8.99%, proving the model’s high accuracy.
 - Insights & Reporting – Interpreted results and provided strategic recommendations.
 
 ## Project Insights & Conclusion
